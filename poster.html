@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bootstrapping Loader Poster</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    p {
+      font-size: 0.8rem;
+      line-height: 1.6;
+      margin: 0 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #00ffe5;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #ffde59;
+      margin-bottom: 10px;
+    }
+
+    .info-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #00ffe5;
+    }
+
+    .flowchart-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .flow-box {
+      background: white;
+      color: #000;
+      border: 2px solid #00cfff;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px #00ffe5;
+      text-align: center;
+      flex-direction: column;
+      padding: 5px;
+    }
+
+    .flow-box .flow-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.2;
+      font-size: 32px; /* Big emoji */
+    }
+
+    .flow-box .flow-content span {
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .arrow {
+      font-size: 26px;
+      color: #00cfff;
+    }
+
+    @media (max-width: 768px) {
+      .flowchart-container {
+        flex-direction: column;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🕳️ Bootstrapping: A Loader Loading Itself</h1>
+    <p>“Pulling yourself up by your bootstraps” — now in the world of compilers!</p>
+  </header>
+
+  <div class="section">
+    <div class="info-box">
+      <h2>📌 What is Bootstrapping Loader?</h2>
+      <p>Bootstrapping in system programming refers to a process where a small program (known as a <strong>loader</strong>) is responsible for loading a more complex program (like a compiler or OS). This initial program is simple but crucial — it “pulls up” the rest of the system.</p>
+    </div>
+
+    <div class="info-box">
+      <h2>⚙️ Why is Bootstrapping Needed?</h2>
+      <ul style="text-align: left; max-width: 700px; margin: auto;">
+        <li>To load complex software from a simpler system.</li>
+        <li>To translate higher-level language code when no compiler is available.</li>
+        <li>To move from machine-dependent to machine-independent compilers.</li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h2>🧠 Bootstrapping Flowchart</h2>
+      <div class="flowchart-container">
+        <div class="flow-box"><div class="flow-content">🔌<span>Power ON</span></div></div>
+        <div class="arrow">➡️</div>
+        <div class="flow-box"><div class="flow-content">⚙️<span>Initialize</span></div></div>
+        <div class="arrow">➡️</div>
+        <div class="flow-box"><div class="flow-content">📥<span>Load</span></div></div>
+        <div class="arrow">➡️</div>
+        <div class="flow-box"><div class="flow-content">📄<span>Read</span></div></div>
+        <div class="arrow">➡️</div>
+        <div class="flow-box"><div class="flow-content">🔁<span>Control</span></div></div>
+        <div class="arrow">➡️</div>
+        <div class="flow-box"><div class="flow-content">💽<span>Program</span></div></div>
+        <div class="arrow">➡️</div>
+        <div class="flow-box"><div class="flow-content">✅<span>Ready</span></div></div>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <h2>🔁 Step-by-Step Bootstrapping</h2>
+      <ol style="text-align: left; max-width: 700px; margin: auto;">
+        <li>Write a simple compiler in assembly language.</li>
+        <li>Use it to write a better compiler in a high-level language.</li>
+        <li>Compile the better compiler using the simple one.</li>
+        <li>Eventually, use the better compiler to compile itself!</li>
+      </ol>
+    </div>
+  </div>
+
+  <footer>
+    <p>Created by Piyush Nimbalkar | TE CMPN | Bootstrapping Loader Poster</p>
+  </footer>
+</body>
+</html>
